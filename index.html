@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullimgbox">
+        <img src="IMG-20240303-WA0087.jpg" alt="" id="fullimg">
+        <span onclick="closeFullImg()">X</span>
+       
+
+    </div>
+    <div class="img-gallery">
+        <img src="IMG-20240303-WA0087.jpg" alt=""onclick="openFullImg(this.src)">
+        <img src="IMG-20240228-WA0168.jpg" alt=""onclick="openFullImg(this.src)">
+        
+        <img src="IMG-20240228-WA0148.jpg" alt=""onclick="openFullImg(this.src)">
+        <img src="IMG-20240228-WA0125.jpg" alt=""onclick="openFullImg(this.src)">
+        <img src="IMG-20240228-WA0015.jpg" alt=""onclick="openFullImg(this.src)">
+        <img src="IMG-20231217-WA0260.jpg" alt=""onclick="openFullImg(this.src)">
+       
+        <img src="IMG-20231217-WA0217.jpg" alt=""onclick="openFullImg(this.src)">
+        <img src="IMG-20231217-WA0198.jpg" alt=""onclick="openFullImg(this.src)">
+       
+        <img src="IMG-20231216-WA0009.jpg" alt=""onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openFullImg(pic){
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
